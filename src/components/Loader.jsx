@@ -62,7 +62,6 @@ export const Loader = ({isCompleted}) => {
     const [isEntered,setIsEntered] = useRecoilState(IsEnteredAtom);
 
     const progress = useProgress();
-    console.log("from Loader Compo",isEntered);
     if(isEntered) return null;
     return(
             <Html center>
