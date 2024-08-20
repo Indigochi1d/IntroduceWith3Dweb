@@ -1,5 +1,5 @@
 /*eslint-disable react/no-unknown-property*/
-import {Box, Circle, Points, PositionalAudio, useAnimations, useGLTF, useScroll, useTexture} from "@react-three/drei";
+import {Box, Circle, Points, useAnimations, useGLTF, useScroll, useTexture} from "@react-three/drei";
 import {useEffect, useMemo, useRef, useState} from "react";
 import {useRecoilValue} from "recoil";
 import {IsEnteredAtom} from "../stores/index.js";
@@ -7,7 +7,6 @@ import {Loader} from "./Loader.jsx";
 import {useFrame, useThree} from "@react-three/fiber";
 import gsap from "gsap";
 import * as THREE from "three";
-import music from "/audio/SellBuyMusic.mp3";
 
 let timeLine;
 const colors = {
